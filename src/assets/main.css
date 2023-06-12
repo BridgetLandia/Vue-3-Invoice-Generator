@@ -1,0 +1,25 @@
+@import './base.css';
+
+#app {
+  max-width: 1680px;
+  min-width: 1280px;
+  font-weight: normal;
+}
+
+
+fieldset {
+  padding: 3rem;
+  color: #c4c2c2;
+  border: solid 1px #c4c2c2 ;
+  border-radius: 13px;
+  margin: 3rem 1rem;
+}
+
+  body {
+    display: flex;
+    justify-content: center;
+    padding: 0px 2rem;
+    background: linear-gradient(to right bottom, #f5eee8 50%, rgb(239, 234, 255) 50%);
+  }
+
+
