@@ -1,4 +1,4 @@
-# invoice-app-vue-3
+# Vue-3-Invoice-Generator
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -66,3 +66,4 @@ npm run test:e2e
 ```sh
 npm run lint
 ```
+
