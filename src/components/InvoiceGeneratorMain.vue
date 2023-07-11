@@ -6,6 +6,7 @@ import InvoiceGeneratorHeader from './InvoiceGeneratorHeader.vue'
 import InvoiceGeneratorItems from './InvoiceGeneratorItems.vue'
 import InvoiceGeneratorBankDetails from './InvoiceGeneratorBankDetails.vue'
 import InvoiceTemplate from '@/components/InvoiceTemplate.vue'
+import FooterSection from "@/components/FooterSection.vue";
 
 const date = ref('')
 let showPreview = false
@@ -231,8 +232,10 @@ const editInvoice = function () {
     </v-navigation-drawer>
 
     <v-main style="height: 500px"></v-main>
+
   </v-layout>
   <InvoiceTemplate
+          v-if="showPreview"
     :bank-details="bankDetails"
     :invoice-header="invoiceHeader"
     :invoice-items="invoiceItems"
@@ -244,6 +247,9 @@ const editInvoice = function () {
     :invoice-notes="invoiceNotes"
     id="invoice_template"
   />
+<v-layout>
+    <FooterSection/>
+</v-layout>
 </template>
 
 <style>
